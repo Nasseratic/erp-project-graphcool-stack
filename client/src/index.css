@@ -1,3 +1,13 @@
 header {
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+.home .date .day {
+  margin-top: 20px;
+}
+
+.notFound {
+  padding: 20%;
+  margin-top: 200px;
 }

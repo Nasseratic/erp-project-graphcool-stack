@@ -1,18 +1,30 @@
 import React from "react";
-import Time from "./Time";
-import Slider from "./Slider";
+import Home from "./Home";
+import TopNews from "./TopNews";
+import Videos from "./Videos";
+import News from "./News";
+import Live from "./Live";
+import Subscribe from "./Subscribe";
+import Gallery from "./Gallery";
+import Ads from "./Ads";
+import BelowNews from "./BelowNews";
 
-class Home extends React.Component {
+class Index extends React.Component {
   render() {
     return (
-      <section className="home">
-        <div className="mycontainer">
-          <Time />
-          <Slider />
-        </div>
-      </section>
+      <div>
+        <Home />
+        <TopNews />
+        <BelowNews />
+        <Videos />
+        <News />
+        <Live />
+        <Subscribe />
+        <Gallery />
+        <Ads />
+      </div>
     );
   }
 }
 
-export default Home;
+export default Index;
