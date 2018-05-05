@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Cheque-Black';
+  src: url('Cheque-Black.eot?#iefix') format('embedded-opentype'),  url('Cheque-Black.otf')  format('opentype'),
+	     url('Cheque-Black.woff') format('woff'), url('Cheque-Black.ttf')  format('truetype'), url('Cheque-Black.svg#Cheque-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

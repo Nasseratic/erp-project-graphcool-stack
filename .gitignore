@@ -1,0 +1,11 @@
+.DS_Store
+npm-debug.log
+data/schema.graphql
+node_modules
+.idea
+.netlify
+build
+.graphcoolrc
+
+/authentication-with-email-and-apollo
+/authentication-with-facebook-and-apollo
