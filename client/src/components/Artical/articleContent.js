@@ -1,11 +1,11 @@
 import React from "react";
-import Time from "./Time";
-import FristContent from "./FristContent";
-import Video from "./Video";
-import SecondContent from "./SecondContent";
-import Social from "./Social";
-import ToHome from "./ToHome";
-import ReadMore from "./ReadMore";
+import time from "./time";
+import frist_content from "./frist_content";
+import video from "./video";
+import second_content from "./second_content";
+import social from "./social";
+import toHome from "./toHome";
+import readMore from "./readMore";
 
 class articleContent extends React.Component {
   render() {
@@ -16,14 +16,14 @@ class articleContent extends React.Component {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.{" "}
           </p>
-          <Time />
+          <time />
           <hr />
-          <FristContent />
-          <Video />
-          <SecondContent />
-          <Social />
-          <ToHome />
-          <ReadMore />
+          <frist_content />
+          <video />
+          <second_content />
+          <social />
+          <toHome />
+          <readMore />
         </div>
       </section>
     );
