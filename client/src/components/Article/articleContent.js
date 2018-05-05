@@ -5,7 +5,7 @@ import video from "./video";
 import second_content from "./second_content";
 import social from "./social";
 import toHome from "./toHome";
-import readMore from "./readMore";
+import readMore from "../Shared/ReadMore";
 
 class articleContent extends React.Component {
   render() {
