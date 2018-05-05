@@ -13,7 +13,10 @@ export default () => (
           {" "}
           There is temporary error at system please try again later.
         </p>
-        <Link to="/" className="bold text-center white align-self-start">
+        <Link
+          to="/"
+          className="backtohome bold text-center white align-self-start"
+        >
           GO BACK
         </Link>
       </div>

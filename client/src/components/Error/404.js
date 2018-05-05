@@ -6,11 +6,14 @@ export default () => (
       <img src="images/404.png" alt="" class="align-self-center" />
       <p
         class="semiBold align-self-start text-center text"
-        style={{ width: "50%" }}
+        style={{ width: "100%" }}
       >
         The page you were looking for doesn't exist
       </p>
-      <Link to="/" class="bold text-center white align-self-start">
+      <Link
+        to="/"
+        className="backtohome bold text-center white align-self-start"
+      >
         GO BACK
       </Link>
     </div>

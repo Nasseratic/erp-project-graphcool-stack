@@ -11,3 +11,22 @@ header {
   padding: 20%;
   margin-top: 200px;
 }
+
+.backtohome {
+  font-size: 22px;
+  width: 155px;
+  height: 60px;
+  background-color: #c93034;
+  border: none;
+  padding: 10px;
+}
+
+.notFound > .text {
+  font-size: 24px;
+  width: 100%;
+  margin: 65px 0 80px;
+}
+
+.searchRes {
+  margin-top: 200px;
+}

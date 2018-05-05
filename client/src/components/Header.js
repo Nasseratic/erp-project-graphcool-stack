@@ -1,14 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 class Header extends React.Component {
   render() {
     return (
       <header>
         <div className="mycontainer">
-          <img src="images/logo.png" alt className="logo" />
+          <Link to="/">
+            <img src="images/logo.png" alt className="logo" />
+          </Link>
           <ul>
             <li className="tapName">
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="tapName">
               <a href="#">Style</a>
@@ -35,9 +37,9 @@ class Header extends React.Component {
               </button>
             </form>
             <li className="tapName headerSearch hideSearch">
-              <a href="#">
+              <Link to="/search">
                 <i className="fas fa-search" />Search
-              </a>
+              </Link>
             </li>
             <li className="tapName hideSearch">
               <a href="#" className="red">
