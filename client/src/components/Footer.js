@@ -8,7 +8,7 @@ class footer extends React.Component {
           <div className="mycontainer">
             <div className=" d-flex justify-content-between flex-wrap">
               <div className="logowrapper upper">
-                <img src="images/logo.png" alt className="logo" />
+                <img src="/images/logo.png" alt className="logo" />
               </div>
               <div className="middle clearfix upper">
                 <div className="contact float-left">
