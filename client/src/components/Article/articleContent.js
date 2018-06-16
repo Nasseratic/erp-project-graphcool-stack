@@ -1,31 +1,51 @@
 import React from "react";
-import time from "./time";
-import frist_content from "./frist_content";
-import video from "./video";
-import second_content from "./second_content";
-import social from "./social";
-import toHome from "./toHome";
-import readMore from "../Shared/ReadMore";
+import Time from "./time";
+import FristContent from "./frist_content";
+import Video from "./video";
+import SecondContent from "./second_content";
+import Social from "./social";
+import ToHome from "./toHome";
+import ReadMore from "../Shared/ReadMore";
+import axios from "axios";
+import { withRouter } from 'react-router-dom'
 
 class articleContent extends React.Component {
+  constructor(props) {
+    super();
+    this.aid = props.match.params.aid;
+  }
+  state = {
+    title: "loading..",
+    authorName: "",
+    datePublished: "",
+    articleBody: "",
+    imageUrl: "",
+    videoUrl: ""
+  }
+  componentDidMount(){
+    axios.get(`http://localhost:5000/article/${this.aid}`).then(res =>{
+      console.log('====================================');
+      console.log(res.data);
+      console.log('====================================');
+     if(res.data) this.setState(res.data);
+     else this.props.history.push('/404');
+    });
+  }
   render() {
     return (
-      <section className="articleContent">
-        <div className="mycontainer">
-          <p className="bold head">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.{" "}
+        <div className="mycontainer" style={{marginTop:'200px'}} >
+          <p className="bold head" style={{fontSize:30}}>
+            {this.state.title}
           </p>
-          <time />
+          <Time authorName={this.state.authorName} date={this.state.datePublished} imageUrl={this.state.imageUrl} />
           <hr />
-          <frist_content />
-          <video />
-          <second_content />
-          <social />
-          <toHome />
-          <readMore />
+          <FristContent text={this.state.articleBody} />
+          {/* <Video /> */}
+          <SecondContent />
+          <Social />
+          <ToHome />
+          <ReadMore />
         </div>
-      </section>
     );
   }
 }

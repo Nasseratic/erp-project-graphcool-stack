@@ -21,9 +21,9 @@ ReactDOM.render(
     <div>
       <Header />
       <Switch>
+        <Route path="/article/:aid" component={Article} />
         <Route exact path="/" component={Home} />
         <Route path="/internal" component={null} />
-        <Route path="/article" component={Article} />
         <Route path="/search" component={Search} />
         <Route path="/404" component={Page404} />
         <Route path="/500" component={Page500} />

@@ -6,7 +6,7 @@ class Header extends React.Component {
       <header>
         <div className="mycontainer">
           <Link to="/">
-            <img src="images/logo.png" alt className="logo" />
+            <img src="/images/logo.png" alt className="logo" />
           </Link>
           <ul>
             <li className="tapName">
